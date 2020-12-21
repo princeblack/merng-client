@@ -16,12 +16,6 @@ function Home() {
     posts = data.getPosts
   }
   
-  useEffect(() => {
-    if(data){
-      posts = data.getPosts
-    }
-    console.log('Posts');
-  }, [data])
   return (
     <Grid columns={3}>
       <Grid.Row className="page-title">
